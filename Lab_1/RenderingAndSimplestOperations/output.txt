@@ -1,6 +1,7 @@
 Triangle Perimeter: 482 Area: 10000
 Rectangle Perimeter: 400 Area: 10000
-Circle Perimeter: 314 Area: 7850
-Circle Perimeter: 621 Area: 30775
+Circle Perimeter: 314 Area: 7853
+Circle Perimeter: 622 Area: 30790
 Triangle Perimeter: 740 Area: 20000
 Rectangle Perimeter: 518 Area: 14418
+Triangle Perimeter: 1200 Area: 60000

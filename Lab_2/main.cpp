@@ -57,7 +57,7 @@ int main()
 			int x, y, r;
 			paramsStream >> x >> y >> r;
 			params.erase(0, 7);
-			CCircleCreator circleCreator;
+			auto& circleCreator = CCircleCreator::GetInstance();
 			auto circleShape = circleCreator.CreateFigure(params);
 			window.draw(*circleShape);
 			auto circleDec = make_unique<CCircleDecorator>(move(circleShape), r);
@@ -70,7 +70,7 @@ int main()
 			paramsStream >> x1 >> y1 >> x2 >> y2;
 			sf::Vector2f sizeVector(x2 - x1, y2 - y1);
 			params.erase(0, 10);
-			CRectangleCreator rectangleCreator;
+			auto& rectangleCreator = CRectangleCreator::GetInstance();
 			auto rectangleShape = rectangleCreator.CreateFigure(params);
 			window.draw(*rectangleShape);
 			auto rectangleDec = make_unique<CRectangleDecorator>(move(rectangleShape), sizeVector);
@@ -80,7 +80,7 @@ int main()
 		if (shapeType == triangleType)
 		{
 			params.erase(0, 9);
-			CTriangleCreator triangleCreator;
+			auto& triangleCreator = CTriangleCreator::GetInstance();
 			auto triangleShape = triangleCreator.CreateFigure(params);
 			window.draw(*triangleShape);
 			auto triangleDec = make_unique<CTriangleDecorator>(move(triangleShape));

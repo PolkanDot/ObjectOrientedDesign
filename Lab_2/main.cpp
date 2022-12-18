@@ -91,6 +91,3 @@ int main()
 	window.display();
 	sf::sleep(sf::seconds(4));
 }
-
-
-
